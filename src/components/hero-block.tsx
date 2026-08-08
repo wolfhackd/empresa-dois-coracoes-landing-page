@@ -30,13 +30,6 @@ const STATS = [
 ]
 
 
-// Unidade 1
-// https://whatsa.me/5581996535242/?t=Ol%C3%A1,%20Farm%C3%A1cia%20Dois%20Cora%C3%A7%C3%B5es!%20Gostaria%20de%20fazer%20um%20pedido%20ou%20consultar%20o%20pre%C3%A7o%20de%20alguns%20itens.%20Podem%20me%20ajudar?
-
-// Unidade 2
-// https://whatsa.me/5581995014640/?t=Ol%C3%A1,%20Farm%C3%A1cia%20Dois%20Cora%C3%A7%C3%B5es!%20Gostaria%20de%20fazer%20um%20pedido%20ou%20consultar%20o%20pre%C3%A7o%20de%20alguns%20itens.%20Podem%20me%20ajudar?
-
-
 export default function HeroBlock() {
   const whatsappUrl = "https://whatsa.me/5581995014640/?t=Ol%C3%A1,%20Farm%C3%A1cia%20Dois%20Cora%C3%A7%C3%B5es!%20Gostaria%20de%20fazer%20um%20pedido%20ou%20consultar%20o%20pre%C3%A7o%20de%20alguns%20itens.%20Podem%20me%20ajudar?"
 
