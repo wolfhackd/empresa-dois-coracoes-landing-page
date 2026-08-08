@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import { Map, MapMarker, MapPopup, MarkerContent, MarkerLabel, MarkerPopup, type MapRef } from "@/components/ui/map";
-import { RiMapPin2Fill, RiExternalLinkLine, RiCrossFill, RiCrossLine, RiMedicineBottleFill } from "@remixicon/react";
-import { Clock, ExternalLink, Star } from "lucide-react";
+import { Map, MapMarker, MarkerContent, MarkerLabel, MarkerPopup, type MapRef } from "@/components/ui/map";
+import { RiMedicineBottleFill } from "@remixicon/react";
+import { Clock, Star } from "lucide-react";
 import { Button } from "./ui/button";
 
 const styles = {
@@ -46,7 +46,7 @@ const FARMACIA_COORDS = [
 
 export function CustomMap() {
   const mapRef = useRef<MapRef>(null);
-  const [style, setStyle] = useState<StyleKey>("default");
+  const [style] = useState<StyleKey>("default");
   const selectedStyle = styles[style];
   const is3D = style === "openstreetmap3d";
 
@@ -54,9 +54,13 @@ export function CustomMap() {
     mapRef.current?.easeTo({ pitch: is3D ? 60 : 0, duration: 500 });
   }, [is3D]);
 
+  
+
   const handleClick = (link: string) => {
     window.open(link, "_blank");
   }
+
+
 
 
 

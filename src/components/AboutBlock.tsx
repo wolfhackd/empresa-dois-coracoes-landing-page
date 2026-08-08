@@ -1,4 +1,4 @@
-import { RiHeartPulseFill, RiShieldCheckFill, RiTeamFill } from "@remixicon/react";
+import { RiShieldCheckFill, RiTeamFill } from "@remixicon/react";
 
 export default function AboutBlock() {
   return (
