@@ -4,6 +4,7 @@ import {
   RiHeartPulseLine,
   RiStarFill,
   RiTruckLine,
+  RiUser3Fill,
 } from "@remixicon/react"
 
 import { Badge } from "@/components/ui/badge"
@@ -21,17 +22,30 @@ const STATS = [
     value: "4.9 / 5.0",
     label: "Atendimento de confiança",
   },
+  {
+    icon: RiUser3Fill,
+    value: "Atendimento",
+    label: "Com profissionais qualificados",
+  },
 ]
 
+
+// Unidade 1
+// https://whatsa.me/5581996535242/?t=Ol%C3%A1,%20Farm%C3%A1cia%20Dois%20Cora%C3%A7%C3%B5es!%20Gostaria%20de%20fazer%20um%20pedido%20ou%20consultar%20o%20pre%C3%A7o%20de%20alguns%20itens.%20Podem%20me%20ajudar?
+
+// Unidade 2
+// https://whatsa.me/5581995014640/?t=Ol%C3%A1,%20Farm%C3%A1cia%20Dois%20Cora%C3%A7%C3%B5es!%20Gostaria%20de%20fazer%20um%20pedido%20ou%20consultar%20o%20pre%C3%A7o%20de%20alguns%20itens.%20Podem%20me%20ajudar?
+
+
 export default function HeroBlock() {
-  const whatsappUrl = "https://wa.me/5581999999999?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido%20ou%20enviar%20uma%20receita."
+  const whatsappUrl = "https://whatsa.me/5581995014640/?t=Ol%C3%A1,%20Farm%C3%A1cia%20Dois%20Cora%C3%A7%C3%B5es!%20Gostaria%20de%20fazer%20um%20pedido%20ou%20consultar%20o%20pre%C3%A7o%20de%20alguns%20itens.%20Podem%20me%20ajudar?"
 
   return (
     <section className="flex w-full items-center justify-center bg-background px-6 py-12 text-foreground">
       <div className="mx-auto w-full max-w-3xl">
         <Badge variant="outline" className="gap-1.5 border-primary/20 bg-primary/5 text-primary">
           <RiHeartPulseLine className="size-3.5" />
-          Atendimento humanizado no Centro
+          Atendimento humanizado para você
         </Badge>
 
         <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
