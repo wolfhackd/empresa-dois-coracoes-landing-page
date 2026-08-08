@@ -6,9 +6,12 @@ import ContactBlock from './components/contact-block'
 function App() {
   return (
     <>
+    
+
       <HeaderBlock />
       <HeroBlock />
       <ContactBlock />
+   
     </>
   )
 }

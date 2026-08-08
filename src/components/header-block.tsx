@@ -12,7 +12,23 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-const navLinks = ["Início", "Categorias", "Sobre", "Endereço", "Contato"]
+// const navLinks = ["Início", "Categorias", "Sobre", "Endereço", "Contato"]
+const navLinks = [{
+  name: "Início",
+  href: "#inicio"
+}, {
+  name: "Categorias",
+  href: "#categorias"
+}, {
+  name: "Sobre",
+  href: "#sobre"
+}, {
+  name: "Endereço",
+  href: "#location"
+}, {
+  name: "Contato",
+  href: "#contato"
+}]
 
 export default function HeaderBlock() {
   return (
@@ -23,11 +39,11 @@ export default function HeaderBlock() {
       <nav className="hidden items-center gap-6 md:flex">
         {navLinks.map((link) => (
           <a
-            key={link}
-            href="#"
+            key={link.name}
+            href={link.href}
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            {link}
+            {link.name}
           </a>
         ))}
       </nav>
@@ -59,12 +75,12 @@ export default function HeaderBlock() {
             <nav className="flex flex-col px-2">
               {navLinks.map((link) => (
                 <SheetClose
-                  key={link}
-                  render={<a href="#" />}
+                  key={link.name}
+                  render={<a href={link.href} />}
                   nativeButton={false}
                   className="px-2 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 >
-                  {link}
+                  {link.name}
                 </SheetClose>
               ))}
             </nav>
