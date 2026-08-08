@@ -18,16 +18,13 @@ const navLinks = [{
   href: "#inicio"
 }, {
   name: "Categorias",
-  href: "#categorias"
+  href: "#services"
 }, {
   name: "Sobre",
-  href: "#sobre"
+  href: "#about"
 }, {
   name: "Endereço",
   href: "#location"
-}, {
-  name: "Contato",
-  href: "#contato"
 }]
 
 export default function HeaderBlock() {
